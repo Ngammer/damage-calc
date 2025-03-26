@@ -10051,7 +10051,13 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
 
 const SV: {[name: string]: SpeciesData} = extend(true, {}, SS, SV_PATCH, PLA_PATCH);
 
-export const SPECIES = [{}, RBY, GSC, ADV, DPP, BW, XY, SM, SS, SV];
+const NM_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
+  
+};
+
+const NM: {[name: string]: SpeciesData} = extend(true, {}, SV, NM_PATCH);
+
+export const SPECIES = [{}, RBY, GSC, ADV, DPP, BW, XY, SM, SS, SV, NM];
 
 export class Species implements I.Species {
   private readonly gen: I.GenerationNum;
