@@ -339,11 +339,8 @@ const SV = SS.concat([
   'Zero to Hero',
 ]);
 
-const NM = SV.concat([
-  
-]);
 
-export const ABILITIES = [[], RBY, GSC, ADV, DPP, BW, XY, SM, SS, SV, NM];
+export const ABILITIES = [[], RBY, GSC, ADV, DPP, BW, XY, SM, SS, SV];
 
 export class Abilities implements I.Abilities {
   private readonly gen: I.GenerationNum;

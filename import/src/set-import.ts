@@ -178,7 +178,7 @@ function getSpecie(gen: Generation, specieName: SpeciesName): Specie | PSSpecie 
 
 function toPSFormat(formatID: ID): ID {
   if (formatID === 'gen9vgc2024') {
-    return `gen9vgc2025regg` as ID;
+    return 'gen9vgc2025regg' as ID;
   }
   if (formatID === 'gen9battlestadiumsingles') {
     return 'gen9bssregg' as ID;
@@ -564,7 +564,7 @@ function stringifyCalcSets(calcSets: {[specie: string]: {[name: string]: CalcSet
     console.log(`${outDir} is not a directory`);
     process.exit(1);
   }
-  const genNames = ['RBY', 'GSC', 'ADV', 'DPP', 'BW', 'XY', 'SM', 'SS', 'SV', 'NM'];
+  const genNames = ['RBY', 'GSC', 'ADV', 'DPP', 'BW', 'XY', 'SM', 'SS', 'SV'];
   for (const [i, genName] of genNames.entries()) {
     const calcSets = await importGen(gens.get(i + 1));
     const path = `${outDir}/gen${i + 1}.js`;

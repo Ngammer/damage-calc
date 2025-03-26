@@ -10055,9 +10055,8 @@ const NM_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   
 };
 
-const NM: {[name: string]: SpeciesData} = extend(true, {}, SV, NM_PATCH);
 
-export const SPECIES = [{}, RBY, GSC, ADV, DPP, BW, XY, SM, SS, SV, NM];
+export const SPECIES = [{}, RBY, GSC, ADV, DPP, BW, XY, SM, SS, SV];
 
 export class Species implements I.Species {
   private readonly gen: I.GenerationNum;
