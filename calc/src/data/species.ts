@@ -10049,12 +10049,17 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
 };
 
-const SV: {[name: string]: SpeciesData} = extend(true, {}, SS, SV_PATCH, PLA_PATCH);
-
 const NM_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
-  
+  Fearow: {nfe: true},
+  Fearill: {
+    types: ["Dark", "Flying"],
+    bs: {hp: 70, at: 115, df: 73, sa: 62, sd: 70, sp: 110},
+    weightkg: 45,
+    abilities: {0: 'Keen Eye'},
+  },
 };
 
+const SV: {[name: string]: SpeciesData} = extend(true, {}, SS, SV_PATCH, PLA_PATCH, NM_PATCH);
 
 export const SPECIES = [{}, RBY, GSC, ADV, DPP, BW, XY, SM, SS, SV];
 

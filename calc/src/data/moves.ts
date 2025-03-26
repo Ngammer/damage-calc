@@ -4913,12 +4913,11 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
   },
 };
 
-const SV: {[name: string]: MoveData} = extend(true, {}, SS, SV_PATCH);
-
 const NM_PATCH: {[name: string]: DeepPartial<MoveData>} = {
   
 }
 
+const SV: {[name: string]: MoveData} = extend(true, {}, SS, SV_PATCH, NM_PATCH);
 
 export const MOVES = [{}, RBY, GSC, ADV, DPP, BW, XY, SM, SS, SV];
 
