@@ -371,6 +371,7 @@ var SETDEX_DPP = {
     "UU Bulky Spinblocker": {"ability":"Pressure","item":"Leftovers","nature":"Impish","evs":{"hp":252,"df":252,"sd":4},"moves":["Seismic Toss","Will-O-Wisp","Rest","Sleep Talk"]},
     "UU Trick Room Support": {"ability":"Pressure","item":"Leftovers","nature":"Relaxed","ivs":{"sp":0},"evs":{"hp":252,"df":252,"sd":4},"moves":["Trick Room","Seismic Toss","Will-O-Wisp","Pain Split"]},
     "NU Physical Wall": {"ability":"Pressure","item":"Leftovers","nature":"Impish","evs":{"hp":252,"df":252,"sd":4},"moves":["Seismic Toss","Will-O-Wisp","Pain Split","Protect"]},
+    "NU Offensive": {"ability":"Pressure","item":"Leftovers","nature":"Adamant","evs":{"hp":252,"at":252,"sd":4},"moves":["Shadow Sneak","Earthquake","Will-O-Wisp","Pain Split"]},
     "Doubles OU Trick Room": {"ability":"Pressure","item":"Mail","nature":"Relaxed","ivs":{"sp":0},"evs":{"hp":252,"df":96,"sd":160},"moves":["Trick Room","Rain Dance","Helping Hand","Night Shade"]}
   },
   "Regirock": {
@@ -406,8 +407,7 @@ var SETDEX_DPP = {
     "LC Mixed Attacker": {"level":5,"ability":"Overgrow","item":"Life Orb","nature":"Quiet","ivs":{"at":30,"sa":30,"sp":2},"evs":{"at":216,"df":4,"sa":240},"moves":["Seed Bomb","Earth Power","Hidden Power Fire","Crunch"]}
   },
   "Grotle": {
-    "ZU Physically Defensive": {"ability":"Overgrow","item":"Leftovers","nature":"Impish","evs":{"hp":248,"df":252,"sd":8},"moves":["Seed Bomb","Synthesis","Stealth Rock","Return"]},
-    "ZU Specially Defensive": {"ability":"Overgrow","item":"Leftovers","nature":"Careful","evs":{"hp":248,"sd":8},"moves":["Seed Bomb","Synthesis","Stealth Rock","Return"]}
+    "ZU Defensive": {"ability":"Overgrow","item":"Leftovers","nature":"Impish","evs":{"hp":248,"df":252,"sd":8},"moves":["Seed Bomb","Synthesis","Stealth Rock","Return"]}
   },
   "Torterra": {
     "OU Rock Polish": {"ability":"Overgrow","item":"Life Orb","nature":"Jolly","evs":{"at":252,"df":4,"sp":252},"moves":["Rock Polish","Earthquake","Wood Hammer","Return"]},
@@ -725,7 +725,7 @@ var SETDEX_DPP = {
   },
   "Fidgit": {
     "CAP Utility": {"ability":"Vital Spirit","item":"Black Sludge","nature":"Timid","evs":{"hp":252,"df":40,"sp":216},"moves":["Rapid Spin","Earth Power","Encore","Knock Off"]},
-    "CAP Trick Room Setter": {"ability":"Persistent","item":"Sitrus Berry","nature":"Relaxed","ivs":{"sp":0},"evs":{"hp":252,"df":12,"sd":176},"moves":["Trick Room","Stealth Rock","U-turn","Encore"]}
+    "CAP Trick Room Setter": {"ability":"Persistent","item":"Sitrus Berry","nature":"Sassy","ivs":{"sp":0},"evs":{"hp":252,"df":40,"sd":216},"moves":["Trick Room","Stealth Rock","U-turn","Encore"]}
   },
   "Stratagem": {
     "CAP Calm Mind": {"ability":"Levitate","item":"Leftovers","nature":"Timid","evs":{"sa":252,"sd":4,"sp":252},"moves":["Calm Mind","Paleo Wave","Flamethrower","Shadow Ball"]},
@@ -1455,7 +1455,8 @@ var SETDEX_DPP = {
     "Ubers Attacking Lead": {"ability":"Technician","item":"Lum Berry","nature":"Adamant","evs":{"hp":248,"at":8,"sd":252},"moves":["Bug Bite","Bullet Punch","Brick Break","Roost"]},
     "Ubers Specially Defensive": {"ability":"Technician","item":"Leftovers","nature":"Careful","evs":{"hp":244,"at":20,"df":76,"sd":168},"moves":["Roost","U-turn","Bullet Punch","Brick Break"]},
     "Ubers Swords Dance": {"ability":"Technician","item":"Life Orb","nature":"Adamant","evs":{"hp":248,"at":252,"sp":8},"moves":["Swords Dance","Bullet Punch","Roost","Bug Bite"]},
-    "Doubles OU Showdown Usage": {"ability":"Technician","item":"Iron Plate","nature":"Adamant","evs":{"hp":248,"at":252,"sp":8},"moves":["Bullet Punch","Bug Bite","Swords Dance","Protect"]}
+    "Doubles OU Swords Dance": {"ability":"Technician","item":"Metal Coat","nature":"Adamant","evs":{"hp":248,"at":252,"sp":8},"moves":["Bullet Punch","Bug Bite","Swords Dance","Protect"]},
+    "Doubles OU Choice Band": {"ability":"Technician","item":"Choice Band","nature":"Adamant","evs":{"hp":248,"at":252,"sp":8},"moves":["U-turn","Bullet Punch","Superpower","Pursuit"]}
   },
   "Shuckle": {
     "UU Toxic Stall": {"ability":"Sturdy","item":"Leftovers","nature":"Impish","evs":{"hp":248,"df":252,"sd":8},"moves":["Toxic","Encore","Rest","Knock Off"]}
@@ -1704,7 +1705,7 @@ var SETDEX_DPP = {
     "UU All-Out Attacker": {"ability":"Guts","item":"Toxic Orb","nature":"Adamant","evs":{"at":252,"df":172,"sp":84},"moves":["Close Combat","Payback","Bullet Punch","Fake Out"]},
     "UU RestTalk": {"ability":"Thick Fat","item":"Leftovers","nature":"Impish","evs":{"hp":12,"df":252,"sd":244},"moves":["Rest","Sleep Talk","Force Palm","Whirlwind"]},
     "UU SubPunch": {"ability":"Thick Fat","item":"Leftovers","nature":"Adamant","evs":{"at":252,"sd":252,"sp":4},"moves":["Substitute","Focus Punch","Payback","Stone Edge"]},
-    "Doubles OU Showdown Usage": {"ability":"Guts","item":"Flame Orb","nature":"Brave","evs":{"at":4,"df":252,"sd":252},"moves":["Fake Out","Close Combat","Rock Slide","Feint"]},
+    "Doubles OU Bulky Support": {"ability":"Guts","item":"Flame Orb","nature":"Brave","ivs":{"sp":0},"evs":{"at":4,"df":252,"sd":252},"moves":["Fake Out","Close Combat","Ice Punch","Detect"]},
     "Anything Goes Showdown Usage": {"ability":"Guts","item":"Toxic Orb","nature":"Adamant","evs":{"hp":120,"at":252,"sd":128,"sp":8},"moves":["Bullet Punch","Fake Out","Close Combat","Payback"]}
   },
   "Nosepass": {
@@ -1760,7 +1761,7 @@ var SETDEX_DPP = {
   "Swalot": {
     "UU Support": {"ability":"Liquid Ooze","item":"Leftovers","nature":"Calm","evs":{"hp":4,"df":252,"sd":252},"moves":["Encore","Yawn","Pain Split","Sludge Bomb"]},
     "UU RestTalk": {"ability":"Liquid Ooze","item":"Leftovers","nature":"Sassy","evs":{"hp":252,"df":144,"sd":112},"moves":["Rest","Sleep Talk","Sludge Bomb","Earthquake"]},
-    "ZU Specially Defensive": {"ability":"Liquid Ooze","item":"Leftovers","nature":"Careful","evs":{"hp":248,"sd":8},"moves":["Gunk Shot","Earthquake","Seed Bomb","Encore"]},
+    "ZU Specially Defensive": {"ability":"Liquid Ooze","item":"Leftovers","nature":"Careful","evs":{"hp":248,"sd":252,"sp":8},"moves":["Gunk Shot","Earthquake","Seed Bomb","Encore"]},
     "ZU Curse": {"ability":"Liquid Ooze","item":"Leftovers","nature":"Careful","evs":{"hp":248,"sd":252,"sp":8},"moves":["Curse","Rest","Sleep Talk","Fire Punch"]}
   },
   "Carvanha": {
@@ -2476,10 +2477,10 @@ var SETDEX_DPP = {
     "Anything Goes Showdown Usage": {"ability":"Pressure","item":"Choice Scarf","nature":"Modest","evs":{"df":64,"sa":252,"sp":192},"moves":["Thunder","Dragon Pulse","Stealth Rock","Roar"]}
   },
   "Palkia": {
-    "Ubers Choice Scarf": {"ability":"Pressure","item":"Choice Scarf","nature":"Hasty","evs":{"at":4,"sa":252,"sp":252},"moves":["Spacial Rend","Surf","Thunder","Outrage"]},
-    "Ubers Specially-Based Mixed Attacker": {"ability":"Pressure","item":"Lustrous Orb","nature":"Hasty","evs":{"at":4,"sa":252,"sp":252},"moves":["Surf","Spacial Rend","Aqua Tail","Thunder"]},
+    "Ubers Choice Scarf": {"ability":"Pressure","item":"Choice Scarf","nature":"Timid","evs":{"sa":252,"sd":4,"sp":252},"moves":["Spacial Rend","Thunder","Hydro Pump","Fire Blast"]},
+    "Ubers Wallbreaker": {"ability":"Pressure","item":"Lum Berry","nature":"Timid","evs":{"at":4,"sa":252,"sp":252},"moves":["Spacial Rend","Hydro Pump","Substitute","Thunder"]},
     "Ubers Physically-Based Mixed Attacker": {"ability":"Pressure","item":"Lustrous Orb","nature":"Hasty","evs":{"at":252,"sa":4,"sp":252},"moves":["Aqua Tail","Spacial Rend","Outrage","Fire Blast"]},
-    "Ubers Choice Specs": {"ability":"Pressure","item":"Choice Specs","nature":"Timid","evs":{"hp":4,"sa":252,"sp":252},"moves":["Surf","Spacial Rend","Thunder","Draco Meteor"]},
+    "Ubers Choice Specs": {"ability":"Pressure","item":"Choice Specs","nature":"Timid","evs":{"hp":4,"sa":252,"sp":252},"moves":["Hydro Pump","Spacial Rend","Thunder","Draco Meteor"]},
     "Ubers SubPunch": {"ability":"Pressure","item":"Expert Belt","nature":"Hasty","evs":{"at":100,"sa":156,"sp":252},"moves":["Substitute","Focus Punch","Spacial Rend","Thunder"]},
     "Ubers Choice Band": {"ability":"Pressure","item":"Choice Band","nature":"Jolly","evs":{"hp":4,"at":252,"sp":252},"moves":["Aqua Tail","Outrage","Earthquake","Stone Edge"]},
     "Ubers Bulk Up": {"ability":"Pressure","item":"Lustrous Orb","nature":"Jolly","evs":{"hp":4,"at":252,"sp":252},"moves":["Bulk Up","Aqua Tail","Outrage","Earthquake"]},
